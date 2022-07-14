@@ -10,11 +10,8 @@ class HomeController extends Controller {
 
             // Was 'DELETE' button pressed?
             if(isset($_POST['delete'])) {
-                $id = $_POST['delete'];
-                Item::deleteItem($id);
-                
-                $this->addMessage('This item was successfully removed!');
-                $this->redirect('aurora/');
+                $delete = new DeleteController($_POST['delete']);
+                $delete->go();
             }
                             
             // Was 'EDIT' button pressed?
