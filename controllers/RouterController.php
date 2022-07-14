@@ -5,7 +5,11 @@ class RouterController extends Controller {
 
     public function go() {
         $parsedUrl = $this->parseUrl($_SERVER['REQUEST_URI']);
-        
+        // preventing from opening pages that doesn't exist
+        if($parsedUrl[0] == 'delete' || ($parsedUrl[0] == 'edit' && !isset($_GET['id']))) {
+            $this->redirect('aurora/');
+        }
+
         if (empty($parsedUrl[0]) || $parsedUrl[0] == 'index') {
             $controllerClass = 'HomeController';
         } else {
