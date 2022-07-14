@@ -10,4 +10,5 @@ Authorized users can also add new items, edit and delete existing items.
 
 You can use either "aurora"/"creation2022" login/password to authorize or create your own user.
 
-config.php contains credentials to the database.
+* config.php contains credentials to the database.
+* aurora.sql contains the database.
