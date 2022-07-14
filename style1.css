@@ -1,0 +1,149 @@
+body {
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    width: 900px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #444444;
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+    margin-right: 15px;
+}
+
+nav a {
+    background: #ffd000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background: #ffc401;
+    
+    text-decoration: none;
+}
+
+button[type="submit"] {
+    background: #6FA4F8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+button[type="submit"]:hover {
+    background: #2976f8;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;    
+    display: block;
+    margin: 5px;
+    /* margin-top: 0px; */
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background: #6FA4F8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+input[type="submit"]:hover {
+    background: #2976f8;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    
+    display: block;
+    margin: 5px;
+    /* margin-top: 0px; */
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    padding: 0.3em;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    width: 483px;
+    height: 90px;
+}
+
+.message {
+    border: 1px solid #9DC2F8;
+    background: #DBE8F8;
+    padding: 3px;
+    width: 100%;
+}
+
+.error {
+    border: 1px solid #9b0404;
+    background: rgb(250, 208, 215);
+    padding: 3px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+td {
+
+    border: 1px solid #ccc;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5px;
+    
+}
+
+form>.loginField {
+    width: 90px;
+}
+
+form>.goButton {
+    background: #b8bdc5;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 0px;
+    display: inline;
+}
+
+form>.goButton:hover {
+    background: #a0ff9c;
+    color: black;
+}
