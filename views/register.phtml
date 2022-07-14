@@ -1,0 +1,18 @@
+<h2><?= $header ?></h2>
+
+<?php foreach ($messages as $message) : ?>
+    <p class="error"><?= $message ?></p>
+<?php endforeach ?>
+
+<form action="" method="post">
+    <label for="login">Login:</label><br />
+    <input type="text" id="login" name="login" value="<?= $login; ?>" /><br />
+
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" name="password" value="" /><br />
+
+    <label for="password_repeat">Repeat:</label><br />
+    <input type="password" id="password_repeat" name="password_repeat" value="" /><br />
+
+    <p><input type="submit" value="Add a new user!" /></p>
+</form>

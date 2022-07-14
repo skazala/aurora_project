@@ -1,0 +1,38 @@
+<h2>Here is the list of the items:</h2>
+
+<table>
+    
+    <?php if(empty($items)) : ?>
+        <p class="error">The items table is empty!</p>
+    <?php else : ?>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Category</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <?php foreach($items as $item) : ?>
+            <tr>
+                <td><?= $item['name']; ?></td>
+                <td><?= $item['description']; ?></td>
+                <td><?= $item['status']; ?></td>
+                <td><?= $item['category']; ?></td>
+                <?php if($user) : ?>
+                    <td>        
+                        <form action="" method="post" id="edit">
+                            <button form="edit" type="submit" name="edit" value="<?= $item['id']; ?>">Edit</button>
+                        </form>
+                    </td>
+                    <td>        
+                        <form action="" method="post" id="delete">
+                            <button form="delete" type="submit" name="delete" value="<?= $item['id']; ?>">Delete</button>
+                        </form>
+                    </td>
+                <?php endif; ?>
+            </tr>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</table>
+<br />
