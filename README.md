@@ -1,4 +1,4 @@
-# aurora_project
+# items manager project 
 
 This is a test project which consists of the items manager and the database that stores items and users.
 
